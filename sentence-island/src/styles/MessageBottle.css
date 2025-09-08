@@ -1,0 +1,210 @@
+.message-bottle-container {
+  position: relative;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.message-bottle-container.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+.message-bottle {
+  position: relative;
+  width: 80px;
+  height: 120px;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+.message-bottle:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.4));
+}
+
+.message-bottle.clicked {
+  animation: bottleClick 0.6s ease;
+}
+
+.bottle-neck {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 25px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(200,220,255,0.8) 100%);
+  border-radius: 4px 4px 0 0;
+  border: 2px solid rgba(255,255,255,0.5);
+}
+
+.bottle-cork {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 12px;
+  background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+  border-radius: 6px 6px 2px 2px;
+  border: 1px solid #654321;
+}
+
+.bottle-body {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 95px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(200,220,255,0.7) 50%, rgba(150,200,255,0.8) 100%);
+  border-radius: 0 0 30px 30px;
+  border: 2px solid rgba(255,255,255,0.6);
+  overflow: hidden;
+}
+
+.bottle-message {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message-scroll {
+  width: 30px;
+  height: 35px;
+  background: linear-gradient(135deg, #F5F5DC 0%, #DDBEA9 100%);
+  border-radius: 2px;
+  border: 1px solid #D2B48C;
+  position: relative;
+}
+
+.message-scroll::before {
+  content: '📜';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.bottle-reflection {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  width: 15px;
+  height: 60px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.2) 100%);
+  border-radius: 10px;
+  opacity: 0.7;
+}
+
+.bottle-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 140px;
+  background: radial-gradient(ellipse, rgba(255,255,255,0.3) 0%, transparent 70%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.message-bottle:hover .bottle-glow {
+  opacity: 1;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(-2deg);
+  }
+  33% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+  66% {
+    transform: translateY(-5px) rotate(-1deg);
+  }
+}
+
+@keyframes bottleClick {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2) rotate(5deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes glow {
+  0% {
+    opacity: 0.3;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+/* 데스크탑 반응형 */
+@media (min-width: 1024px) {
+  .message-bottle {
+    width: 120px;
+    height: 180px;
+  }
+  
+  .bottle-neck {
+    width: 30px;
+    height: 35px;
+  }
+  
+  .bottle-cork {
+    width: 34px;
+    height: 18px;
+    top: -12px;
+  }
+  
+  .bottle-body {
+    width: 90px;
+    height: 145px;
+    top: 35px;
+  }
+  
+  .bottle-message {
+    width: 60px;
+    height: 75px;
+    top: 30px;
+  }
+  
+  .message-scroll {
+    width: 45px;
+    height: 50px;
+  }
+  
+  .message-scroll::before {
+    font-size: 24px;
+  }
+  
+  .bottle-reflection {
+    width: 22px;
+    height: 90px;
+    left: 12px;
+    top: 15px;
+  }
+  
+  .bottle-glow {
+    width: 150px;
+    height: 200px;
+  }
+}
