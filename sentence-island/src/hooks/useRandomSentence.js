@@ -4,11 +4,11 @@ import { sentences } from '../data/sentences';
 const useRandomSentence = () => {
   const [usedSentences, setUsedSentences] = useState(new Set());
 
-  const getRandomSentence = useCallback((category = 'all') => {
-    let availableSentences = sentences;
+  const getRandomSentence = useCallback((category = 'all', customSentences = []) => {
+    let availableSentences = [...sentences, ...customSentences];
     
     if (category !== 'all') {
-      availableSentences = sentences.filter(sentence => sentence.category === category);
+      availableSentences = availableSentences.filter(sentence => sentence.category === category);
     }
     
     // 사용하지 않은 문장들 필터링
