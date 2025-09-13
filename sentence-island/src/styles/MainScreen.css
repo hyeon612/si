@@ -42,7 +42,8 @@
 }
 
 @keyframes waveFloat {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -154,23 +155,23 @@
 }
 
 .selection-title {
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 700;
   color: #2c3e50;
   margin-bottom: 30px;
   text-shadow: none;
-  letter-spacing: 1px;
-  font-family: 'Arial', sans-serif;
+  letter-spacing: 1.5px;
+  font-family: "OngleipKonkon", sans-serif;
 }
 
 .selection-title-first {
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 2.2rem;
+  font-weight: 600;
   color: #2c3e50;
   margin-bottom: 10px;
   text-shadow: none;
-  letter-spacing: 1px;
-  font-family: 'Arial', sans-serif;
+  letter-spacing: 2px;
+  font-family: "OngleipKonkon", sans-serif;
 }
 
 .category-buttons {
@@ -219,32 +220,32 @@
   color: #2c3e50;
   text-shadow: none;
   letter-spacing: 1px;
-  font-family: 'Arial', sans-serif;
+  font-family: "OngleipKonkon", sans-serif;
 }
 
 /* 각 카테고리별 호버 색상 */
 .category-btn.love:hover {
-  border-color: #FF69B4;
+  border-color: #ff69b4;
   box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
 }
 
 .category-btn.friendship:hover {
-  border-color: #87CEEB;
+  border-color: #87ceeb;
   box-shadow: 0 10px 30px rgba(135, 206, 235, 0.3);
 }
 
 .category-btn.career:hover {
-  border-color: #FFD700;
+  border-color: #ffd700;
   box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
 }
 
 .category-btn.comfort:hover {
-  border-color: #98FB98;
+  border-color: #98fb98;
   box-shadow: 0 10px 30px rgba(152, 251, 152, 0.3);
 }
 
 .category-btn.travel:hover {
-  border-color: #DDA0DD;
+  border-color: #dda0dd;
   box-shadow: 0 10px 30px rgba(221, 160, 221, 0.3);
 }
 
@@ -254,34 +255,39 @@
     font-size: 2.5rem;
     letter-spacing: 2px;
   }
-  
+
   .main-subtitle {
     font-size: 1rem;
   }
-  
+
   .main-content {
     gap: 30px;
   }
-  
+
   .selection-title {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     margin-bottom: 25px;
   }
-  
+
+  .selection-title-first {
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
+  }
+
   .category-buttons {
     gap: 12px;
     max-width: 100%;
   }
-  
+
   .category-btn {
     min-width: 80px;
     padding: 15px 12px;
   }
-  
+
   .category-emoji {
     font-size: 2rem;
   }
-  
+
   .category-text {
     font-size: 0.9rem;
   }
@@ -293,30 +299,35 @@
     font-size: 4rem;
     letter-spacing: 6px;
   }
-  
+
   .main-subtitle {
     font-size: 1.4rem;
   }
-  
+
   .selection-title {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     margin-bottom: 35px;
   }
-  
+
+  .selection-title-first {
+    font-size: 2.8rem;
+    letter-spacing: 3px;
+  }
+
   .category-buttons {
     gap: 20px;
     max-width: 100%;
   }
-  
+
   .category-btn {
     min-width: 100px;
     padding: 25px 20px;
   }
-  
+
   .category-emoji {
     font-size: 3rem;
   }
-  
+
   .category-text {
     font-size: 1.1rem;
   }

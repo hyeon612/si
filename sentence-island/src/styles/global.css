@@ -1,11 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+@font-face {
+  font-family: "OngleipKonkon";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
 
 :root {
-  --ocean-blue: #87CEEB;
-  --deep-ocean: #4682B4;
-  --sand-color: #F4E4BC;
-  --palm-green: #228B22;
-  --trunk-brown: #8B4513;
+  --ocean-blue: #87ceeb;
+  --deep-ocean: #4682b4;
+  --sand-color: #f4e4bc;
+  --palm-green: #228b22;
+  --trunk-brown: #8b4513;
   --glass-blue: rgba(135, 206, 235, 0.3);
   --white: #ffffff;
   --text-dark: #333333;
@@ -20,8 +26,8 @@
 }
 
 body {
-  font-family: 'Noto Sans KR', sans-serif;
-  background: linear-gradient(180deg, #87CEEB 0%, #4682B4 100%);
+  font-family: "OngleipKonkon", sans-serif;
+  background: linear-gradient(180deg, #87ceeb 0%, #4682b4 100%);
   color: var(--text-dark);
   overflow-x: hidden;
   min-height: 100vh;

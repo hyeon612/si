@@ -135,6 +135,7 @@
   flex-wrap: wrap;
   gap: 15px;
   margin-top: 10px;
+  justify-content: center;
 }
 
 .category-option {
@@ -195,20 +196,20 @@
     margin-top: 60px;
     padding: 30px 20px;
   }
-  
+
   .form-title {
     font-size: 1.5rem;
   }
-  
+
   .form-row {
     grid-template-columns: 1fr;
     gap: 15px;
   }
-  
+
   .category-options {
     gap: 10px;
   }
-  
+
   .category-label {
     padding: 8px 12px;
     font-size: 0.9rem;
