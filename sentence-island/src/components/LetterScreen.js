@@ -63,9 +63,11 @@ const LetterScreen = ({ sentence, isVisible, onClose }) => {
           
           {showMeta && (
             <div className="letter-meta">
-              {sentence.author && (
+              {sentence.author ? (
                 <p className="letter-author">- {sentence.author}</p>
-              )}
+              ) : !sentence.book ? (
+                <p className="letter-author">- 익명</p>
+              ) : null}
               {sentence.book && (
                 <p className="letter-book">『{sentence.book}』</p>
               )}
