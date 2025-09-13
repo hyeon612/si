@@ -14,7 +14,10 @@ function App() {
   const [currentSentence, setCurrentSentence] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [showBottle, setShowBottle] = useState(false);
-  const [customSentences, setCustomSentences] = useState([]);
+  const [customSentences, setCustomSentences] = useState(() => {
+    const saved = localStorage.getItem('customSentences');
+    return saved ? JSON.parse(saved) : [];
+  });
   const { getRandomSentence } = useRandomSentence();
 
   const handleModeSelect = (selectedMode) => {
@@ -50,7 +53,10 @@ function App() {
       tags: []
     };
 
-    setCustomSentences(prev => [...prev, newSentence]);
+    const updatedSentences = [...customSentences, newSentence];
+    setCustomSentences(updatedSentences);
+    localStorage.setItem('customSentences', JSON.stringify(updatedSentences));
+    
     alert('병편지가 성공적으로 보내졌습니다! 다른 사람들이 받아볼 수 있게 되었어요.');
     setCurrentScreen('main');
     setMode(null);
