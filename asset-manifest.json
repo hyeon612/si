@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/si/static/css/main.93a66b66.css",
+    "main.js": "/si/static/js/main.abb709e5.js",
+    "static/media/편지.png": "/si/static/media/편지.7aaa1fc76c7ebdf5c64b.png",
+    "static/media/유리병 편지.png": "/si/static/media/유리병 편지.b391d36ca1d66c065ded.png",
+    "static/media/파도.png": "/si/static/media/파도.aceaab450498b1eecd29.png",
+    "static/media/첫화면 섬만 있는 배경.png": "/si/static/media/첫화면 섬만 있는 배경.7f3921be54fad24cff1b.png",
+    "static/media/첫화면 파도.png": "/si/static/media/첫화면 파도.fd2714514dce863a1369.png",
+    "static/media/모래바닥 배경.png": "/si/static/media/모래바닥 배경.e9d1f39a227b0d092bc1.png",
+    "index.html": "/si/index.html",
+    "main.93a66b66.css.map": "/si/static/css/main.93a66b66.css.map",
+    "main.abb709e5.js.map": "/si/static/js/main.abb709e5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93a66b66.css",
+    "static/js/main.abb709e5.js"
+  ]
+}
